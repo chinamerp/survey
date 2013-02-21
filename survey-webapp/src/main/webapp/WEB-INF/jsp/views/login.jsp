@@ -15,7 +15,7 @@
 
 <form action='${security_check_url}' method='post' class="form-horizontal">
     <fieldset>
-        <legend>Login with Username and Password</legend>
+        <legend>请使用您的账号和密码登录</legend>
         <c:if test="${not empty authException}">
         <div class="control-group">
             <div class="controls">
@@ -24,13 +24,13 @@
         </div>
         </c:if>
         <div class="control-group">
-            <label for="j_username" class="control-label">Username:</label>
+            <label for="j_username" class="control-label">账号:</label>
             <div class="controls">
                 <input type='text' id="j_username" name='j_username' value='' placeholder="Enter username..." />
             </div>
         </div>
         <div class="control-group">
-            <label for="j_password" class="control-label">Password:</label>
+            <label for="j_password" class="control-label">密码:</label>
             <div class="controls">
                 <input type='password' id="j_password" name='j_password' placeholder="Enter password..."/>
             </div>

@@ -9,7 +9,54 @@
 <%@ taglib prefix="util" tagdir="/WEB-INF/tags/util" %>
 <%@ taglib prefix="tb" uri="/WEB-INF/taglib/taglib.tld" %>
 
+<util:dust path="/template/survey_list" cache="false"/>
 <util:js value="/resources/js/pages/home.js" />
 
-<h1>Bootstrap starter template</h1>
-<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+<div class="btn-toolbar" style="margin: 0;">
+  <div class="btn-group">
+    <a href="./addnew" role="button" class="btn btn-success" data-toggle="modal">创建问卷</a>
+    <button class="btn btn-success" type="button">编辑问卷</button>
+  </div><!-- /btn-group -->
+  <div class="btn-group">
+    <button class="btn btn-danger" type="button">删除问卷</button>
+  </div><!-- /btn-group -->
+  <div class="btn-group">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">查看<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">设计中</a></li>
+      <li><a href="#">已发布</a></li>
+      <li><a href="#">已关闭</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div><!-- /btn-group -->
+  <div class="btn-group">
+    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">排序<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div><!-- /btn-group -->
+  <div class="btn-group">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div><!-- /btn-group -->
+  <div class="control-group pull-right input-append">
+    <input type="text" class="">
+    <button class="btn btn-success " type="button"><i class="icon-search"></i></button>
+    
+  </div><!-- /btn-group -->
+</div><!-- /btn-toolbar -->
+
+<hr>
+
+<div id="survey_list"></div>           

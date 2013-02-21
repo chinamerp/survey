@@ -24,6 +24,7 @@
         <%-- Twitter Bootstrap, see: http://twitter.github.com/bootstrap/ --%>
         <util:css href="/resources/css/vendor/bootstrap-2.2.2.css" />
         <util:css href="/resources/css/vendor/bootstrap-responsive-2.2.2.css" />
+		<util:css href="/resources/css/vendor/bbGrid.css" />
 
         <util:css href="/resources/css/main.css" />
     </c:otherwise>

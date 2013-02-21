@@ -36,15 +36,7 @@
                 </ul>
                 <ul class="nav pull-right">
                     <c:forEach var="item" items="contact">
-                        <spring:message var="itemTitle" code="navbar.${item}.title" />
-                        <c:choose>
-                            <c:when test="${item eq selectedView}">
-                                <li class="active"><a href="${item}">${itemTitle}</a></li>
-                            </c:when>
-                            <c:otherwise>
-                                <li><a href="${item}">${itemTitle}</a></li>
-                            </c:otherwise>
-                        </c:choose>
+                        <li><a id="user_name"><security:authentication property="name"/></a></li>
                     </c:forEach>
                 </ul>
             </div> <!--/.nav-collapse -->

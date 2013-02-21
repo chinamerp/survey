@@ -60,10 +60,18 @@
 
         <%-- Twitter Bootstrap --%>
         <util:js value="/resources/js/vendor/bootstrap-2.2.2.js" />
-
+		<%-- bbGrid.js --%>
+		<util:js value="/resources/js/vendor/bbGrid.js" />
+		
         <util:js value="/resources/js/common.js"/>
     </c:otherwise>
 </c:choose>
+
+<script type="text/javascript">
+    if (window.mainJS){
+    	window.mainJS.init(jQuery);
+    }
+</script>
 
 <%--
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
